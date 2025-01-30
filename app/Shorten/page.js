@@ -37,19 +37,19 @@ const Shorten = () => {
     }
 
     return (
-        <div className='mx-auto max-w-4xl rounded-2xl items-center my-16  border-2 border-blue-800 p-8 gap-4 flex flex-col'>
-            <h1 className='text-center text-4xl text-slate-800 font-bold flex flex-col justify-center' >Generate Your Short URL</h1>
+        <div className='mx-auto max-w-4xl rounded-3xl items-center my-16  border-4 border-blue-600 p-8 gap-4 flex flex-col '>
+            <h1 className='text-center text-4xl text-slate-800 font-bold flex flex-col justify-center' >Generate Your Compress Link</h1>
 
             <div className='flex flex-col text-center items-center  w-3/4  rounded-full  gap-3'>
                 <input
-                    className='border-2 mt-6  border-black w-2/4 focus:outline-blue-700 rounded-2xl px-4 py-2'
+                    className='border-2   border-black w-2/4 mt-6 bg-slate-200 focus:outline-blue-700 rounded-2xl px-4 py-2'
                     type="text"
                     placeholder='Enter Your URL'
                     value={url}
                     onChange={e => { seturl(e.target.value) }}
                 />
                 <input
-                    className='border-2 border-black w-2/4 focus:outline-blue-700 rounded-2xl py-2 px-4'
+                    className='border-2  border-black w-2/4 bg-slate-200 focus:outline-blue-700 rounded-2xl py-2 px-4'
                     type="text"
                     placeholder='Enter Your Preafered short URL'
                     value={shorturl}
