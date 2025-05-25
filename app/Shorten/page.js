@@ -38,7 +38,7 @@ const Shorten = () => {
 
     return (
         <div className='mx-auto max-w-4xl rounded-3xl items-center my-16  border-4 border-blue-600 p-8 gap-4 flex flex-col '>
-            <h1 className='text-center text-4xl text-slate-800 font-bold flex flex-col justify-center' >Generate Your Compress Link</h1>
+            <h1 className='text-center text-4xl text-slate-800 font-bold flex flex-col justify-center' >Generate Your Link</h1>
 
             <div className='flex flex-col text-center items-center  w-3/4  rounded-full  gap-3'>
                 <input
