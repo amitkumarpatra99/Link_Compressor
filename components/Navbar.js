@@ -8,7 +8,7 @@ const Navbar = () => {
                 <Link href="/">LINK COMPRESSOR</Link> </div>
 
             <ul className='flex justify-center gap-4 items-center font-semibold '>
-                <Link className='hover:font-bold  hover:text-cyan-300 ' href="/"><li>Home</li></Link>
+                <Link className='hover:font-bold hover:text-cyan-300 ' href="/"><li>Home</li></Link>
                 <Link className='hover:font-bold hover:text-cyan-300 ' href="/about"><li>About</li></Link>
                 <Link className='hover:font-bold hover:text-cyan-300 ' href="/contact"><li>Contact Us</li></Link>
                 <Link className='hover:font-bold hover:text-cyan-300 ' href="/Shorten"><li>Compress</li></Link>
