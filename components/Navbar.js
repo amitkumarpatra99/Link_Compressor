@@ -2,9 +2,10 @@ import Link from 'next/link'
 import React from 'react'
 const Navbar = () => {
     return (
-        <nav className=' h-16 bg-[#096B68] text-white flex px-3 justify-between items-center '>
+        <nav className=' h-16 mt-2 border-2 border-blue-600 rounded-full  text-white flex px-3 justify-between items-center '>
+            
 
-            <div className="logo text-2xl font-bold text-white hover:text-black  ">
+            <div className="logo text-2xl font-bold ml-5 text-white hover:text-cyan-300 cursor-pointer hover:font-extrabold"> 
                 <Link href="/">LINK COMPRESSOR</Link> </div>
 
             <ul className='flex justify-center gap-4 items-center font-semibold '>

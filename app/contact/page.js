@@ -3,9 +3,10 @@ import Link from 'next/link'
 
 const contact = () => {
   return (
-    <div>
+    <div className='h-full w-full p-6 text-white flex flex-col gap-4 justify-center items-center '>
+      
 
-      <h1 className='w-full  text-center justify-center font-bold text-4xl p-6 '> CONTACT US </h1>
+      <h1 className='w-full   text-center justify-center font-bold text-4xl p-6 '> CONTACT US </h1>
       <h2 className='w-full text-center font-bold '> Contact Us For any kind of Problem  like <span className='text-blue-600'>LINK COMPRESSOR </span>  or any other problem related to this website </h2>
       <p className='w-full text-center font-bold'> Email : <span className='text-blue-600'> amitkumarpatraaa@gmail.com </span> </p>
       <p className='w-full text-center font-bold'> Phone : <span className='text-blue-600'> 8144129955 </span> </p>

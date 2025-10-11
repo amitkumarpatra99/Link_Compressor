@@ -37,8 +37,9 @@ const Shorten = () => {
     }
 
     return (
-        <div className='mx-auto max-w-4xl rounded-3xl items-center my-16  border-4 border-blue-600 p-8 gap-4 flex flex-col '>
-            <h1 className='text-center text-4xl text-slate-800 font-bold flex flex-col justify-center' >Generate Your Link</h1>
+        
+        <div className='mx-auto max-w-4xl rounded-3xl items-center my-16  border-4  border-blue-600 p-8 gap-4 flex flex-col '>
+            <h1 className='text-center text-4xl text-white font-bold flex flex-col justify-center' >Generate Your Link</h1>
 
             <div className='flex flex-col text-center items-center  w-3/4  rounded-full  gap-3'>
                 <input
@@ -62,8 +63,8 @@ const Shorten = () => {
                 </button>
             </div>
             {generated && <>
-                <span className='font-bold'>Your Link</span>
-                <code><Link target='_blank' href={generated} > {generated} </Link>
+                <span className='font-bold text-white'>Your Link</span>
+                <code className='text-white'><Link target='_blank' href={generated} > {generated} </Link>
                 </code>
             </>}
         </div>
