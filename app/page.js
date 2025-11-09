@@ -1,29 +1,54 @@
-import Image from "next/image";
+"use client";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <>
+    <main className="relative flex flex-col items-center justify-center min-h-screen px-6 md:px-16 pt-32 md:pt-40 pb-20 overflow-hidden bg-gradient-to-br from-blue-950 via-blue-900 to-black text-white">
+      {/* Background Glow */}
+      <div className="absolute -top-20 left-1/2 -translate-x-1/2 w-[400px] h-[400px] bg-cyan-500/20 blur-3xl rounded-full animate-pulse -z-10"></div>
 
-      <main>
-       
+      {/* Hero Content */}
+      <div className="text-center flex flex-col items-center gap-6 z-10 animate-fadeIn">
+        <h1 className="text-5xl md:text-7xl font-extrabold leading-tight bg-gradient-to-r from-cyan-400 via-blue-400 to-blue-600 bg-clip-text text-transparent drop-shadow-[0_0_25px_rgba(0,200,255,0.4)]">
+          The Link Compressor
+        </h1>
 
-        <section className=" h-full w-full px-16 py-16 gap-4  justify-center items-center ">
-          <div className=" flex flex-col gap-2  items-center justify-center">
-            <p className="text-4xl font-bold cursor-pointer text-white" >THE LINK SHORTNER</p>
+        <p className="text-lg md:text-2xl font-medium text-blue-200 max-w-2xl">
+          Transform long, messy URLs into sleek, shareable links — 
+          <br className="hidden md:block" /> fast, free, and privacy-focused.
+        </p>
 
-            <p className="text-2xl font-semibold cursor-pointer text-white">Shorten Your URL/LINK </p>
-            <Link href="/Shorten">
-              <button type="button" className="text-white bg-blue-700 mt-4 hover:bg-blue-900 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-700 dark:hover:bg-blue-900 dark:focus:ring-blue-800">Try Now</button>
-            </Link>
-          </div>
+        {/* Buttons */}
+        <div className="flex gap-4 mt-4">
+          <Link href="/Shorten">
+            <button className="px-8 py-3 rounded-full text-white text-lg font-semibold bg-gradient-to-r from-blue-600 to-cyan-400 hover:from-cyan-400 hover:to-blue-600 transition-all duration-300 shadow-lg hover:shadow-cyan-500/40 hover:scale-105">
+              Try Now 🚀
+            </button>
+          </Link>
+          <Link href="/about">
+            <button className="px-8 py-3 rounded-full text-lg font-semibold border border-cyan-400 hover:bg-cyan-400 hover:text-black transition-all duration-300">
+              Learn More
+            </button>
+          </Link>
+        </div>
+      </div>
 
-          <div className="flex justify-start relative ">
-            <Image className="mix-blend-darken max-w-100 max-h-50" alt="v" src={"/Vector.png"} fill={true}  />
-          </div>
-        </section>
-      </main>
-</>
-
+      {/* Simple Fade-in Animation */}
+      <style jsx>{`
+        @keyframes fadeIn {
+          0% {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        .animate-fadeIn {
+          animation: fadeIn 1s ease-out forwards;
+        }
+      `}</style>
+    </main>
   );
 }
